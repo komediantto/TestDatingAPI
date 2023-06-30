@@ -120,8 +120,7 @@ def filter_by_distance(queryset, central_latitude,
 
 
 def haversine_distance(lat1, lon1, lat2, lon2):
-    R = 6371  # радиус Земли в километрах
-
+    R = 6371
     lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
     dlat = lat2 - lat1
     dlon = lon2 - lon1
